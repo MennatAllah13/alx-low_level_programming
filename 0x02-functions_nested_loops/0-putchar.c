@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * main - Entry point
  *
@@ -8,8 +8,9 @@
 
 int main(void)
 {
-	string x = "_putchar";
-	for(int i = 0; i < strlen(str); i++)
+	String x = "_putchar";
+	int i;
+	for(i = 0; i < strlen(str); i++)
 	{
 		_putchar(x[i]);
 	}
