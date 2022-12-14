@@ -19,7 +19,7 @@ void print_times_table(int n)
 			for (j = 0; j < n + 1; j++)
 			{
 				val = i * j;
-				if (val <= n)
+				if (val <= 9)
 				{
 					if (j != 0)
 					{
