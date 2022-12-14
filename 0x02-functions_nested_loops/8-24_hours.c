@@ -18,14 +18,15 @@ void jack_bauer(void)
 			{
 				for (w = 48; w <= 57; w++)
 				{
-					if (x = 50 && y = 52)
+					if (x >= 50 && y >= 52)
 					{
-						_putchar(x);
-						_putchar(y);
-						_putchar(':');
-						_putchar(z);
-						_putchar(w);
+						break;
 					}
+					_putchar(x);
+					_putchar(y);
+					_putchar(':');
+					_putchar(z);
+					_putchar(w);
 				}
 			}
 		}
