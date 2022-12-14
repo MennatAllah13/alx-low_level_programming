@@ -31,6 +31,10 @@ void print_times_table(int n)
 				}
 				else
 				{
+					if (val < 100)
+					{
+						_putchar(' ');
+					}
 					_putchar(val / 10 + 48);
 					_putchar(val % 10 + 48);
 				}
