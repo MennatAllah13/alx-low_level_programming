@@ -1,12 +1,14 @@
 #include "main.h"
 /**
- * main - Entry point
+ * _islower - Shows 1 if the input is a
+ * lowercase character. Another cases, shows
+ * 0
  *
  * Return: Always 0 (Success)
  */
 int _islower(int c)
 {
-	if (islower(c))
+	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
 	}
