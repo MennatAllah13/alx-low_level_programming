@@ -9,13 +9,13 @@ int main(void)
 {
 	int i = 1;
 	
-	printf("%d", i);
-
 	while (i < 100)
 	{
-		i++;
-
-		if (i % 3 == 0 && i % 5 == 0)
+		if (i == 1)
+                {
+                    printf("%d", i);
+                }
+		else if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf(" FizzBuzz");
 		}
@@ -31,7 +31,12 @@ int main(void)
 		{
 			printf(" %d", i);
 		}
+
+		i++;
+
 	}
+	
 	printf("\n");
+
 	return (0);
 }
