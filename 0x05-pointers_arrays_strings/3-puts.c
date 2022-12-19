@@ -12,12 +12,12 @@ void _puts(char *str)
 
 	while (count >= 0)
 	{
-		if (*str[count] == NULL)
+		if (str[count] == NULL)
 		{
 			_putchar('\n');
 			break;
 		}
-		_putchar(*str[count]);
+		_putchar(str[count]);
 		count ++;
 	}
 }
