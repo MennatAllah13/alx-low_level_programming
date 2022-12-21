@@ -10,7 +10,7 @@ void rev_string(char *s)
 {
 	int count = 0;
 	int i, j;
-	char *temp;
+	char temp;
 
 	while (s[count] != '\0')
 	{
