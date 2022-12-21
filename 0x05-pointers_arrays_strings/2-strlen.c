@@ -10,13 +10,10 @@ int _strlen(char *s)
 {
 	int count = 0;
 
-	while (count >= 0)
+	while (s[count] == '\0')
 	{
-		if (s[count] == '\0')
-		{
-			break;
-		}
 		count++;
 	}
+
 	_putchar(count);
 }
