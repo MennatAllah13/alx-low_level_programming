@@ -18,6 +18,8 @@ void rev_string(char *s)
 	}
 
 	temp = s;
+	i = 0;
+	j = count;
 
 	while (i <= count && j >= 0)
 	{
