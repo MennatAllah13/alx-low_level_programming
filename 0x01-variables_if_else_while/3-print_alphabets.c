@@ -13,11 +13,11 @@ int main(void)
 
 	for (i = 97; i < 97 + 26; i++)
 	{
-		_putchar(i);
+		putchar(i);
 	}
 	for (i = 65; i < 65 + 26; i++)
 	{
-		_putchar(i);
+		putchar(i);
 	}
 	return (0);
 }
