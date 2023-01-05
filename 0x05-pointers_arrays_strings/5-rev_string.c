@@ -17,7 +17,7 @@ void rev_string(char *s)
 		count++;
 	}
 
-	temp = s;
+	temp = *s;
 	i = 0;
 	j = count - 1;
 
