@@ -21,10 +21,10 @@ void rev_string(char *s)
 	for (i = 0; i < count - 1; i++)
 	{
 		for (j = i + 1; j > 0; j--)
-		{	
+		{
 			x = temp[j];
-			temp[j] = temp[j -1];
-			temp[j -1] = x;
+			temp[j] = temp[j - 1];
+			temp[j - 1] = x;
 		}
 	}
 }
