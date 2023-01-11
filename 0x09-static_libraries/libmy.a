@@ -1,3 +1,4 @@
 #!/bin/bash
-ar -rc libmy.a main.h
+gcc -c -Wall -Werror -Wextra -pedantic *.c
+ar -rc libmy.a *.o
 ranlib libmy.a
