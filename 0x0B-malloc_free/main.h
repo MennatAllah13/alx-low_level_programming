@@ -1,4 +1,4 @@
-#ifndef
+#ifndef _main_h_
 
 char *create_array(unsigned int size, char c);
 
