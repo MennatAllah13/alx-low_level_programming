@@ -27,5 +27,6 @@ int (*get_op_func(char *s))(int, int)
 		i++;
 	}
 
-	return (ops->f[i]);
+	//return (ops->f[i]);
+	return (ops[i / 2].f);
 }
