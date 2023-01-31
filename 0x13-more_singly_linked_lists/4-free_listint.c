@@ -15,12 +15,10 @@ void free_listint(listint_t *head)
 	{
 		node = head;
 		head = head->next;
-		free(node->n);
 		free(node);
 	}
 	if (head)
 	{
-		free(head->n);
 		free(head);
 	}
 }
