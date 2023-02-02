@@ -15,10 +15,13 @@ unsigned int binary_to_uint(const char *b)
 
 	if (!b)
 		return (0);
+
 	while (b)
 	{
 		remain = b % 10;
-		num = num + twos * remain;
+		if (remain != 0 || remain != 1)
+			return (0);
+		num = num + (twos * remain);
 		b = b / 10;
 		twos = twos * 2;
 	}
