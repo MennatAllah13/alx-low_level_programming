@@ -11,18 +11,18 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int num = 0;
-	int twos = 1, remain;
+	int twos = 1, i = 0;
 
 	if (!b)
 		return (0);
 
-	while (b)
+	while (b[i])
+		i++;
+	for (i = i - 1; i >= 0; i--)
 	{
-		remain = b % 10;
-		if (remain != 0 || remain != 1)
+		if (b[i] != '0' && b[i] != '1')
 			return (0);
-		num = num + (twos * remain);
-		b = b / 10;
+		num = num + (b[i] * twos);
 		twos = twos * 2;
 	}
 
