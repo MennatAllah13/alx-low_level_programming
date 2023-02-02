@@ -22,8 +22,11 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
-		num = num + (b[i] * twos);
-		twos = twos * 2;
+		if (b[i] & 1)
+		{
+			num = num + twos;
+			twos = twos * 2;
+		}
 	}
 
 	return (num);
