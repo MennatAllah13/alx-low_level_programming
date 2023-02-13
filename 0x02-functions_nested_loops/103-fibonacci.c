@@ -17,7 +17,7 @@ int main(void)
 		x = y;
 		y = temp;
 		if (x % 2 == 0)
-			sum = sum + x;	
+			sum = sum + x;
 	}
 	printf("%ld\n", sum);
 	return (0);
