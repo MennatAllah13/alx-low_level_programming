@@ -1,11 +1,9 @@
 #include <stdio.h>
-
 /**
  * main - Prints numbers between 00 to 99.
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int i = 48, j, x, y, val1, val2;
@@ -34,14 +32,10 @@ int main(void)
 							break;
 						putchar(',');
 						putchar(' ');
-					}
-					y++;
-				}
-				x++;
-			}
-			j++;
-		}
-		i++;
+					}y++;
+				}x++;
+			}j++;
+		}i++;
 	}
 	putchar('\n');
 	return (0);
