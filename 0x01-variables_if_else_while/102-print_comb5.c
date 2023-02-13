@@ -32,10 +32,14 @@ int main(void)
 							break;
 						putchar(',');
 						putchar(' ');
-					}y++;
-				}x++;
-			}j++;
-		}i++;
+					}
+					y++;
+				}
+				x++;
+			}
+			j++;
+		}
+		i++;
 	}
 	putchar('\n');
 	return (0);
