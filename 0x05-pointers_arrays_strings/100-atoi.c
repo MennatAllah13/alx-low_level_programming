@@ -13,7 +13,7 @@ int _atoi(char *s)
 	while (s + len)
 	{
 		if (*(s + len) == '-')
-			sign = -1;
+			sign = sign * -1;
 		if (*(s + len) >= '0' && *(s + len) <= '9')
 		{
 			if (count > 0)
