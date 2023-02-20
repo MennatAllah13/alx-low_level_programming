@@ -17,8 +17,8 @@ void reverse_array(int *a, int n)
 		if (j > n / 2)
 		{
 			temp = *(a + j);
-			*(a + j) = *(a + i);
-			*(a + i) = temp;
+			*(a + j) = *(a + i - 1);
+			*(a + i - 1) = temp;
 			j--;
 		}
 	}
