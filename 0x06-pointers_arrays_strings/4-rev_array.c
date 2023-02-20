@@ -12,9 +12,9 @@ void reverse_array(int *a, int n)
 {
 	int i, j = n, temp;
 
-	for (i = 0; i < n / 2; i++)
+	for (i = 0; i <= n / 2; i++)
 	{
-		if (j > n / 2)
+		if (j >= n / 2)
 		{
 			temp = *(a + j);
 			*(a + j) = *(a + i - 1);
