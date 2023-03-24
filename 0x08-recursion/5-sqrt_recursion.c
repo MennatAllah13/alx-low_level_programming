@@ -8,15 +8,22 @@
  */
 int _sqrt_recursion(int n)
 {
-	int i = 1;
+	int i = 1, sq;
 
 	while (i)
 	{
 		if (i * i > n)
-			return (-1);
+		{
+			sq = -1;
+			break;
+		}
 		else if (i * i == n)
-			return (i);
+		{
+			sq = i;
+			break;
+		}
 		else
 			i++;
 	}
+	return (sq);
 }
