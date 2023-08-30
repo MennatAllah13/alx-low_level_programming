@@ -8,14 +8,11 @@
  */
 int check_prime(int x, int y)
 {
-	if (x % y == 0)
-	{
-		if (x == y)
-			return (1);
-		else
-			return (0);
-	}
-	return (0 + check_prime(x, y++));
+	if (y <= 1)
+		return (1);
+	else if (x % y == 0)
+		return (0);
+	return (0 + check_prime(x, y--));
 }
 
 /**
@@ -27,5 +24,5 @@ int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
-	return (check_prime(n, 2));
+	return (check_prime(n, n / 2));
 }
