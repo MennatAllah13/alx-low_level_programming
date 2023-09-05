@@ -8,16 +8,17 @@
 
 int main(void)
 {
-	int i;
+	int i = 0;
 	long int x = 1, y = 2, temp;
 
 	printf("%ld, %ld", x, y);
-	for (i = 0; i < 98; i++)
+	while (i < 98)
 	{
 		temp = x + y;
 		x = y;
 		y = temp;
 		printf(", %ld", y);
+		i++;
 	}
 	printf("\n");
 	return (0);
