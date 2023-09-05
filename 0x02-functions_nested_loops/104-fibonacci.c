@@ -12,7 +12,7 @@ int main(void)
 	long int x = 1, y = 2, temp;
 
 	printf("%ld, %ld", x, y);
-	for (i = 0; i < 96; i++)
+	for (i = 0; i < 93; i++)
 	{
 		temp = x + y;
 		x = y;
