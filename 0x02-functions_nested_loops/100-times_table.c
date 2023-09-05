@@ -17,22 +17,34 @@ void print_times_table(int n)
 			{
 				val = i * j;
 				if (val <= 9)
+				{
 					if (j != 0)
+					{
 						_putchar(' ');
 						_putchar(' ');
+					}
 					_putchar(val + 48);
+				}
 				else
+				{
 					if (val < 100)
+					{
 						_putchar(' ');
 						_putchar(val / 10 + 48);
 						_putchar(val % 10 + 48);
+					}
 					if (val > 99)
+					{
 						_putchar(((val / 100) % 10) + 48);
 						_putchar(((val / 10) % 10) + 48);
 						_putchar((val % 10) + 48);
+					}
+				}
 				if (j != n)
+				{
 					_putchar(',');
 					_putchar(' ');
+				}
 			}
 			_putchar('\n');
 		}
