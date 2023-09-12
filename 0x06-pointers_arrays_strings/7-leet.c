@@ -7,7 +7,8 @@
  */
 char *leet(char *str)
 {
-	int i = 0, x[52];
+	int i = 0;
+	int x[52];
 
 	x[0] = 4;
 	x[32] = 4;
