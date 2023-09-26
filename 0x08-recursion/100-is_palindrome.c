@@ -20,7 +20,7 @@ int _recursive(char *s)
  * @n2: biggest iterator.
  * Return: .
  */
-int compare(har *s, int n1, int n2)
+int compare(char *s, int n1, int n2)
 {
 	if (*(s + n1) == *(s + n2))
 	{
