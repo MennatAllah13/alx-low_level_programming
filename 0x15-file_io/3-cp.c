@@ -1,19 +1,21 @@
 #include "main.h"
 
 /**
- * close_file - close file stream
- * @fd: file pointer
- * Return: Void
+ * main - check the code
+ * @argc: number of arg
+ * @argv: array of value
+ * Return: Always 0.
  */
-void close_file(int fd)
+int main(int argc, char *argv[])
 {
-	int cls = close(fd);
 
-	if (cls == -1)
+	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-		exit(100);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
 	}
+	cp(argv[1], argv[2]);
+	return (0);
 }
 
 /**
@@ -63,19 +65,17 @@ void cp(char *source, char *dist)
 }
 
 /**
- * main - check the code
- * @argc: number of arg
- * @argv: array of value
- * Return: Always 0.
+ * close_file - close file stream
+ * @fd: file pointer
+ * Return: Void
  */
-int main(int argc, char *argv[])
+void close_file(int fd)
 {
+	int cls = close(fd);
 
-	if (argc != 3)
+	if (cls == -1)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit(97);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		exit(100);
 	}
-	cp(argv[1], argv[2]);
-	return (0);
 }
